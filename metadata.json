@@ -1,0 +1,6 @@
+{
+  "name": "Tarteeb Restaurant - مطعم ترتيب",
+  "description": "Authentic Qatari cuisine in Kenar Ain Snan, Qatar. Traditional Kabsa, Chicken Majboos, Charcoal Grilled Chicken, Biryani, and Saloona with direct WhatsApp ordering at +974 5563 3705.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

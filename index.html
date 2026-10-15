@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مطعم ترتيب | Tarteeb Restaurant - كنار عين سنان، قطر</title>
+  <meta name="description" content="مطعم ترتيب في كنار عين سنان، قطر. أشهى أطباق المجبوس، الكبسة الملكية، الدجاج المشوي على الفحم، البرياني، والصالونة القطرية. اطلب الآن مباشرة عبر الواتساب: 97455633705+" />
+  
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:title" content="مطعم ترتيب | Tarteeb Restaurant - قطر" />
+  <meta property="og:description" content="أشهى المأكولات القطرية والخليجية - مجبوس دجاج، كبسة، برياني، ودجاج مكينة على الفحم. اطلب عبر الواتساب: +974 5563 3705" />
+  <meta property="og:type" content="restaurant.restaurant" />
+  <meta property="og:locale" content="ar_QA" />
+  <meta name="theme-color" content="#8A1538" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            maroon: {
+              50: '#fdf2f4',
+              100: '#fbe6e9',
+              200: '#f7d0d7',
+              300: '#f0abb8',
+              400: '#e57a91',
+              500: '#d54d6e',
+              600: '#be2e53',
+              700: '#a12042',
+              800: '#8A1538', // Qatari Maroon
+              900: '#731432',
+              950: '#420619',
+            },
+            crimson: {
+              DEFAULT: '#991b1b',
+              dark: '#7f1d1d',
+            },
+            gold: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#d97706', // Warm Gold
+              600: '#b45309',
+              700: '#92400e',
+            },
+            cream: {
+              DEFAULT: '#faf7f2',
+              light: '#fffdfa',
+              dark: '#f3ede4',
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            amiri: ['Amiri', 'serif'],
+            sans: ['Cairo', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Cairo & Amiri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,700&family=Cairo:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: 'Cairo', 'Plus Jakarta Sans', sans-serif;
+      background-color: #faf7f2;
+      color: #1f2937;
+      overflow-x: hidden;
+    }
+    
+    /* Authentic Qatari Sadu Border Pattern */
+    .sadu-pattern {
+      background-color: #8A1538;
+      background-image: repeating-linear-gradient(45deg, #731432 25%, transparent 25%, transparent 75%, #731432 75%, #731432), 
+                        repeating-linear-gradient(45deg, #731432 25%, #8A1538 25%, #8A1538 75%, #731432 75%, #731432);
+      background-position: 0 0, 10px 10px;
+      background-size: 20px 20px;
+    }
+
+    .sadu-border-ribbon {
+      background: repeating-linear-gradient(
+        90deg,
+        #8A1538 0px,
+        #8A1538 20px,
+        #d97706 20px,
+        #d97706 30px,
+        #1c1917 30px,
+        #1c1917 45px,
+        #ffffff 45px,
+        #ffffff 55px,
+        #8A1538 55px,
+        #8A1538 75px
+      );
+    }
+
+    /* Smooth Badge Pulse */
+    @keyframes pulse-subtle {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.9; }
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 2.5s infinite ease-in-out;
+    }
+
+    /* Cart drawer transition */
+    .cart-drawer-open {
+      transform: translateX(0) !important;
+    }
+    
+    /* Scrollbar styling */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #faf7f2;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c2410c;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #8A1538;
+    }
+
+    /* RTL / LTR Helpers */
+    [dir="ltr"] .font-arabic-calligraphy {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    [dir="rtl"] .font-arabic-calligraphy {
+      font-family: 'Amiri', serif;
+    }
+  </style>
+</head>
+<body class="bg-[#faf7f2] text-stone-800 antialiased selection:bg-maroon-800 selection:text-white">
+
+  <!-- Sadu Top Border Accent -->
+  <div class="h-2 w-full sadu-border-ribbon shadow-sm"></div>
+
+  <!-- Announcement & Quick Contact Hotline Bar -->
+  <div class="bg-stone-900 text-stone-200 text-xs md:text-sm py-2 px-4 border-b border-stone-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-maroon-800 text-white shadow-sm">
+          <i class="fa-solid fa-fire text-amber-400"></i>
+          <span id="txt-open-status">مفتوح الآن • عيش وطهي يومي طازج</span>
+        </span>
+        <span class="hidden sm:inline text-stone-300 font-medium">
+          <i class="fa-solid fa-location-dot text-amber-500 mr-1 ml-1"></i>
+          <span id="txt-location-banner">قطر - كنار عين سنان (Kenar Ain Snan)</span>
+        </span>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs font-semibold mr-auto sm:mr-0">
+        <a href="tel:+97455633705" class="hover:text-amber-400 transition flex items-center gap-1.5" title="اتصل بالمطعم">
+          <i class="fa-solid fa-phone text-amber-400"></i>
+          <span dir="ltr" class="tracking-wider">+974 5563 3705</span>
+        </a>
+        <span class="text-stone-700">|</span>
+        <a href="https://wa.me/97455633705" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition flex items-center gap-1.5 text-emerald-400 font-bold" title="محادثة واتساب">
+          <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+          <span id="txt-whatsapp-direct">طلب واتساب مباشر</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Main Navbar -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-md border-b border-stone-200 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Identity / Logo -->
+        <a href="#" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-gradient-to-br from-maroon-800 via-crimson to-maroon-900 text-white flex items-center justify-center shadow-lg shadow-maroon-900/20 ring-2 ring-gold-400/50 group-hover:scale-105 transition transform">
+            <span class="font-arabic-calligraphy text-2xl md:text-3xl font-bold text-amber-300">ت</span>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+              <span class="text-xl md:text-2xl font-black text-maroon-900 tracking-tight font-arabic-calligraphy">مطعم ترتيب</span>
+              <span class="hidden md:inline-block text-[11px] px-2 py-0.5 rounded bg-amber-100 text-amber-900 font-bold uppercase tracking-wider border border-amber-300">Ain Snan</span>
+            </div>
+            <span class="text-xs md:text-sm font-semibold text-stone-500 tracking-wide">TARTEEB RESTAURANT • QATAR</span>
+          </div>
+        </a>
+
+        <!-- Quick Navigation & Hotline Buttons -->
+        <div class="hidden lg:flex items-center gap-6">
+          <a href="#menu-section" class="text-stone-700 hover:text-maroon-800 font-bold text-sm tracking-wide transition flex items-center gap-1.5">
+            <i class="fa-solid fa-utensils text-amber-600"></i>
+            <span id="nav-menu">قائمة الطعام (المنيو)</span>
+          </a>
+          <a href="#signature-dishes" class="text-stone-700 hover:text-maroon-800 font-bold text-sm tracking-wide transition flex items-center gap-1.5">
+            <i class="fa-solid fa-crown text-amber-500"></i>
+            <span id="nav-chicken">قائمة الدجاج والشواية</span>
+          </a>
+          <a href="#storefront-section" class="text-stone-700 hover:text-maroon-800 font-bold text-sm tracking-wide transition flex items-center gap-1.5">
+            <i class="fa-solid fa-store text-maroon-700"></i>
+            <span id="nav-location">الموقع والفرع</span>
+          </a>
+        </div>
+
+        <!-- Actions: Phone, Lang Toggle, and Cart Drawer Trigger -->
+        <div class="flex items-center gap-2.5 sm:gap-3">
+          
+          <!-- Language Switcher Button -->
+          <button id="lang-toggle-btn" onclick="toggleLanguage()" class="px-3 py-1.5 rounded-xl border border-stone-300 hover:border-maroon-800 text-xs font-bold text-stone-700 hover:text-maroon-800 transition bg-stone-50 flex items-center gap-1.5 shadow-sm">
+            <i class="fa-solid fa-globe text-stone-500"></i>
+            <span id="lang-label">English</span>
+          </button>
+
+          <!-- WhatsApp Quick Callout Button (Desktop) -->
+          <a href="https://wa.me/97455633705" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-3.5 py-2 rounded-xl text-xs md:text-sm font-bold shadow-md hover:shadow-lg transition transform active:scale-95">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>+974 5563 3705</span>
+          </a>
+
+          <!-- Cart Drawer Button -->
+          <button id="cart-trigger-btn" onclick="toggleCartDrawer(true)" class="relative flex items-center gap-2 bg-maroon-800 hover:bg-maroon-900 text-white px-4 py-2.5 rounded-xl shadow-md hover:shadow-maroon-900/30 transition transform active:scale-95 group">
+            <div class="relative">
+              <i class="fa-solid fa-bag-shopping text-lg text-amber-300 group-hover:animate-bounce"></i>
+              <span id="cart-count-badge" class="absolute -top-2 -right-2 bg-amber-400 text-stone-950 text-[11px] font-black w-5 h-5 rounded-full flex items-center justify-center border-2 border-maroon-900 shadow-sm transition-transform duration-300">0</span>
+            </div>
+            <div class="hidden xs:flex flex-col text-right pr-1">
+              <span class="text-[10px] text-maroon-200 leading-none" id="cart-btn-label">سلة الطلبات</span>
+              <span class="text-xs font-black text-amber-300 leading-tight" id="cart-btn-total">0 ر.ق</span>
+            </div>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner Section -->
+  <section class="relative bg-gradient-to-b from-maroon-950 via-maroon-900 to-crimson-dark text-white overflow-hidden py-14 md:py-24">
+    <!-- Atmospheric Ambient Glows & Sadu Motifs -->
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d97706_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="absolute -top-32 -right-32 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-maroon-600/30 rounded-full blur-3xl pointer-events-none"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Text & CTAs Column -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-right">
+          
+          <!-- Quality Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-amber-400/40 text-amber-300 text-xs md:text-sm font-bold shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+            <i class="fa-solid fa-certificate text-amber-400"></i>
+            <span id="hero-badge">مطعم ترتيب - كنار عين سنان • أصالة المذاق القطري</span>
+          </div>
+
+          <!-- Bold Headline -->
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight">
+            <span class="font-arabic-calligraphy text-amber-300 block mb-2" id="hero-title-ar">مجبوس، كبسة ملوكية، ودجاج على الفحم</span>
+            <span class="text-xl sm:text-2xl md:text-3xl font-extrabold text-stone-200 block" id="hero-title-en">Traditional Kabsa, Majboos & Charcoal Rice Specialties</span>
+          </h1>
+
+          <!-- Subheadline & Description -->
+          <p class="text-stone-300 text-sm sm:text-base md:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium" id="hero-desc">
+            نقدم لكم يومياً أشهى أطباق الأرز القطري والخليجي الفاخر: دجاج مكينة محمر، مجبوس دجاج باللومي والزعفران، كبسة لحم ملوكية، صالونة خاثرة، ودجاج مشوي مع عيش أحمر. جودة طازجة وتتبيلة أصيلة ترضي ذوقكم الرفيع.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 pt-2">
+            <a href="#menu-section" class="px-7 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-sm md:text-base shadow-xl shadow-amber-500/25 hover:shadow-amber-400/40 transition transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2.5">
+              <i class="fa-solid fa-book-open"></i>
+              <span id="hero-cta-menu">استعرض قائمة الطعام</span>
+            </a>
+
+            <!-- EXACT WhatsApp Number Requirement: +97455633705 -->
+            <a href="https://wa.me/97455633705?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D8%B7%D8%B9%D9%85%20%D8%AA%D8%B1%D8%AA%D9%8A%D8%A8%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%D8%A7%D8%AA" target="_blank" rel="noopener noreferrer" class="px-7 py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm md:text-base shadow-xl shadow-emerald-950/40 hover:shadow-emerald-600/30 transition transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2.5">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span id="hero-cta-whatsapp">اطلب عبر الواتساب</span>
+            </a>
+
+            <a href="tel:+97455633705" class="px-5 py-3.5 rounded-2xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold text-sm md:text-base backdrop-blur-sm transition flex items-center gap-2">
+              <i class="fa-solid fa-phone text-amber-400"></i>
+              <span dir="ltr">+974 5563 3705</span>
+            </a>
+          </div>
+
+          <!-- Quick Trust Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-white/10 text-stone-300">
+            <div class="flex items-center justify-center lg:justify-start gap-2 text-xs font-semibold">
+              <i class="fa-solid fa-check-circle text-amber-400"></i>
+              <span id="feat-1">دجاج ولحوم حلال 100%</span>
+            </div>
+            <div class="flex items-center justify-center lg:justify-start gap-2 text-xs font-semibold">
+              <i class="fa-solid fa-bolt text-amber-400"></i>
+              <span id="feat-2">تحضير سريع وطازج</span>
+            </div>
+            <div class="flex items-center justify-center lg:justify-start gap-2 text-xs font-semibold">
+              <i class="fa-solid fa-motorcycle text-amber-400"></i>
+              <span id="feat-3">سفري ومحلي وتوصيل</span>
+            </div>
+            <div class="flex items-center justify-center lg:justify-start gap-2 text-xs font-semibold">
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <span id="feat-4">مذاق عين سنان المفضل</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Visual Hero Showcase: Signature Platter Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md bg-stone-900/80 backdrop-blur-md rounded-3xl p-5 border border-amber-500/30 shadow-2xl shadow-stone-950/60 overflow-hidden group">
+            
+            <!-- Traditional Ribbon Accent -->
+            <div class="absolute top-0 inset-x-0 h-1.5 sadu-border-ribbon"></div>
+
+            <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-stone-950 mb-4 border border-stone-800">
+              <img 
+                src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80" 
+                alt="Chicken Majboos - Tarteeb Restaurant" 
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-700 brightness-95"
+              />
+              <div class="absolute top-3 right-3 bg-maroon-800/90 backdrop-blur-md text-amber-300 px-3 py-1 rounded-full text-xs font-black shadow-md border border-amber-400/30 flex items-center gap-1.5">
+                <i class="fa-solid fa-crown text-amber-400"></i>
+                <span>الطبق المميز الأكثر طلباً</span>
+              </div>
+              <div class="absolute bottom-3 left-3 bg-stone-950/80 backdrop-blur-md text-white px-3 py-1 rounded-xl text-xs font-bold border border-white/10">
+                <span>24 ر.ق فقط</span>
+              </div>
+            </div>
+
+            <div class="space-y-2 text-right">
+              <div class="flex items-center justify-between">
+                <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">Qatar Signature Dish</span>
+                <div class="flex text-amber-400 text-xs gap-0.5">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold text-white font-arabic-calligraphy">مجبوس دجاج ترتيب الأصيل</h3>
+              <p class="text-xs text-stone-300 leading-relaxed">
+                أرز بسمتي فاخر مطهو بمرق التوابل القطرية مع اللومي والزعفران، يُقدم مع نصف دجاجة ذهبية وصلصة الداكوس الحارة.
+              </p>
+              
+              <div class="pt-3 flex items-center justify-between border-t border-stone-800">
+                <div class="text-right">
+                  <span class="text-[11px] text-stone-400 block">السعر للوجبة</span>
+                  <span class="text-lg font-black text-amber-400">24 QAR</span>
+                </div>
+                <button onclick="addToCart(2, 'مجبوس دجاج ترتيب', 'Signature Chicken Majboos', 24, 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=400&q=80')" class="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-stone-950 rounded-xl font-bold text-xs flex items-center gap-1.5 shadow-md transition active:scale-95">
+                  <i class="fa-solid fa-plus"></i>
+                  <span>أضف للسلة</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase Strip: Chicken Specialties from Attached Menu (قائمة الدجاج) -->
+  <section id="signature-dishes" class="py-12 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-stone-200 gap-4">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-maroon-100 text-maroon-900 text-xs font-bold mb-2">
+            <i class="fa-solid fa-drumstick-bite text-maroon-700"></i>
+            <span id="badge-chicken-menu">مستوحاة من منيو الفرع • قائمة الدجاج</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-black text-stone-900 font-arabic-calligraphy" id="title-chicken-menu">
+            أشهر وجبات الدجاج والأرز في مطعم ترتيب
+          </h2>
+          <p class="text-stone-500 text-sm mt-1" id="subtitle-chicken-menu">
+            الخيارات الأكثر طلباً في كنار عين سنان المطهوة يومياً بأعلى معايير النظافة والاتقان
+          </p>
+        </div>
+
+        <a href="#menu-section" class="inline-flex items-center gap-2 text-maroon-800 hover:text-maroon-900 font-bold text-sm">
+          <span id="btn-view-all">مشاهدة المنيو الكامل</span>
+          <i class="fa-solid fa-arrow-left text-xs"></i>
+        </a>
+      </div>
+
+      <!-- Grid of 5 Main Chicken Dishes from the User Menu Image -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        
+        <!-- 1. دجاج مكينة -->
+        <div class="bg-cream-light rounded-2xl border border-stone-200/80 p-4 shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+          <div>
+            <div class="relative rounded-xl overflow-hidden aspect-square bg-stone-100 mb-3">
+              <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=500&q=80" alt="دجاج مكينة" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <span class="absolute top-2 right-2 bg-maroon-800 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow">محبوب العائلات</span>
+            </div>
+            <h4 class="font-bold text-stone-900 text-base font-arabic-calligraphy mb-1">دجاج مكينة مع عيش</h4>
+            <p class="text-stone-500 text-xs mb-2 leading-relaxed">دجاج شواية متبل بالخلطة الخاصة مع أرز أصفر مبهر ومزين بالجزر المقلي.</p>
+          </div>
+          <div class="pt-3 border-t border-stone-200/60 flex items-center justify-between">
+            <span class="text-maroon-800 font-black text-sm">22 ر.ق</span>
+            <button onclick="addToCart(1, 'دجاج مكينة مع عيش', 'Rotisserie Chicken with Rice', 22, 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=300&q=80')" class="px-2.5 py-1.5 bg-maroon-800 hover:bg-maroon-900 text-white rounded-lg text-xs font-bold transition flex items-center gap-1 active:scale-95">
+              <i class="fa-solid fa-plus text-[10px]"></i>
+              <span>إضافة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. مجبوس دجاج -->
+        <div class="bg-cream-light rounded-2xl border-2 border-amber-400/80 p-4 shadow-sm hover:shadow-md transition flex flex-col justify-between group relative">
+          <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-amber-500 text-stone-950 text-[10px] font-black px-2.5 py-0.5 rounded-full shadow">
+            الأكثر مبيعاً ⭐
+          </div>
+          <div>
+            <div class="relative rounded-xl overflow-hidden aspect-square bg-stone-100 mb-3">
+              <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=500&q=80" alt="مجبوس دجاج" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+            <h4 class="font-bold text-stone-900 text-base font-arabic-calligraphy mb-1">مجبوس دجاج</h4>
+            <p class="text-stone-500 text-xs mb-2 leading-relaxed">الأرز القطري الأصيل بنكهة الهيل والمسمار واللومي الأسود مع الداكوس.</p>
+          </div>
+          <div class="pt-3 border-t border-stone-200/60 flex items-center justify-between">
+            <span class="text-maroon-800 font-black text-sm">24 ر.ق</span>
+            <button onclick="addToCart(2, 'مجبوس دجاج', 'Chicken Majboos', 24, 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=300&q=80')" class="px-2.5 py-1.5 bg-amber-500 hover:bg-amber-400 text-stone-950 rounded-lg text-xs font-bold transition flex items-center gap-1 active:scale-95">
+              <i class="fa-solid fa-plus text-[10px]"></i>
+              <span>إضافة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. صالونة دجاج -->
+        <div class="bg-cream-light rounded-2xl border border-stone-200/80 p-4 shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+          <div>
+            <div class="relative rounded-xl overflow-hidden aspect-square bg-stone-100 mb-3">
+              <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=500&q=80" alt="صالونة دجاج" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <span class="absolute top-2 right-2 bg-amber-700 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow">طعم شعبي</span>
+            </div>
+            <h4 class="font-bold text-stone-900 text-base font-arabic-calligraphy mb-1">صالونة دجاج</h4>
+            <p class="text-stone-500 text-xs mb-2 leading-relaxed">مرق خليجي غني بالبطاطس والدجاج والكزبرة والبهارات الخاثرة الشهية.</p>
+          </div>
+          <div class="pt-3 border-t border-stone-200/60 flex items-center justify-between">
+            <span class="text-maroon-800 font-black text-sm">24 ر.ق</span>
+            <button onclick="addToCart(3, 'صالونة دجاج', 'Chicken Saloona Stew', 24, 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=300&q=80')" class="px-2.5 py-1.5 bg-maroon-800 hover:bg-maroon-900 text-white rounded-lg text-xs font-bold transition flex items-center gap-1 active:scale-95">
+              <i class="fa-solid fa-plus text-[10px]"></i>
+              <span>إضافة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. دجاج مشوي مع عيش أحمر -->
+        <div class="bg-cream-light rounded-2xl border border-stone-200/80 p-4 shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+          <div>
+            <div class="relative rounded-xl overflow-hidden aspect-square bg-stone-100 mb-3">
+              <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=500&q=80" alt="دجاج مشوي مع عيش أحمر" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <span class="absolute top-2 right-2 bg-crimson text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow">على الفحم</span>
+            </div>
+            <h4 class="font-bold text-stone-900 text-base font-arabic-calligraphy mb-1">دجاج مشوي مع عيش أحمر</h4>
+            <p class="text-stone-500 text-xs mb-2 leading-relaxed">دجاج مدخن على جمر الفحم مع الأرز الأحمر الطماطمي الحار والمميز.</p>
+          </div>
+          <div class="pt-3 border-t border-stone-200/60 flex items-center justify-between">
+            <span class="text-maroon-800 font-black text-sm">24 ر.ق</span>
+            <button onclick="addToCart(4, 'دجاج مشوي مع عيش أحمر', 'Grilled Chicken with Red Rice', 24, 'https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=300&q=80')" class="px-2.5 py-1.5 bg-maroon-800 hover:bg-maroon-900 text-white rounded-lg text-xs font-bold transition flex items-center gap-1 active:scale-95">
+              <i class="fa-solid fa-plus text-[10px]"></i>
+              <span>إضافة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. برياني دجاج -->
+        <div class="bg-cream-light rounded-2xl border border-stone-200/80 p-4 shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+          <div>
+            <div class="relative rounded-xl overflow-hidden aspect-square bg-stone-100 mb-3">
+              <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=500&q=80" alt="برياني دجاج" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <span class="absolute top-2 right-2 bg-gold-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow">بهارات هندية</span>
+            </div>
+            <h4 class="font-bold text-stone-900 text-base font-arabic-calligraphy mb-1">برياني دجاج</h4>
+            <p class="text-stone-500 text-xs mb-2 leading-relaxed">أرز برياني فاخر بالزعفران والبصل المقلي والمكسرات مع دجاج محمر شهي.</p>
+          </div>
+          <div class="pt-3 border-t border-stone-200/60 flex items-center justify-between">
+            <span class="text-maroon-800 font-black text-sm">26 ر.ق</span>
+            <button onclick="addToCart(5, 'برياني دجاج', 'Chicken Biryani', 26, 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=300&q=80')" class="px-2.5 py-1.5 bg-maroon-800 hover:bg-maroon-900 text-white rounded-lg text-xs font-bold transition flex items-center gap-1 active:scale-95">
+              <i class="fa-solid fa-plus text-[10px]"></i>
+              <span>إضافة</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Digital Menu Section -->
+  <section id="menu-section" class="py-16 md:py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-900 text-xs font-black border border-amber-300">
+          <i class="fa-solid fa-bell-concierge text-amber-600"></i>
+          <span id="txt-digital-menu-badge">قائمة الطعام الرقمية والطلب السريع</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-black text-maroon-950 font-arabic-calligraphy tracking-tight" id="txt-menu-title">
+          أشهى أطباق مطعم ترتيب
+        </h2>
+        <p class="text-stone-600 text-sm md:text-base" id="txt-menu-subtitle">
+          اختر وجبتك المفضلة وأضفها إلى السلة لتجهيز طلبك فورياً وإرساله مباشرة عبر الواتساب إلى فرعنا في كنار عين سنان
+        </p>
+      </div>
+
+      <!-- Controls: Category Tabs & Search Bar -->
+      <div class="mb-10 space-y-4">
+        
+        <!-- Search Input -->
+        <div class="max-w-xl mx-auto relative">
+          <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none text-stone-400">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <input 
+            type="text" 
+            id="dish-search-input" 
+            placeholder="ابحث عن وجبة، كبسة، مجبوس، صالونة، كرك..." 
+            oninput="handleSearch(this.value)"
+            class="w-full bg-white text-stone-900 pr-11 pl-10 py-3.5 rounded-2xl border border-stone-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-maroon-800 focus:border-transparent text-sm placeholder:text-stone-400 transition"
+          />
+          <button id="clear-search-btn" onclick="clearSearch()" class="hidden absolute inset-y-0 left-0 pl-3.5 flex items-center text-stone-400 hover:text-stone-600">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="flex items-center justify-center flex-wrap gap-2 pt-2" id="category-pills">
+          <button onclick="filterCategory('all')" data-cat="all" class="cat-pill active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-maroon-800 text-white shadow-sm transition active:scale-95">
+            <span>جميع الأصناف (All)</span>
+          </button>
+          <button onclick="filterCategory('chicken')" data-cat="chicken" class="cat-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-stone-700 hover:bg-stone-100 border border-stone-200 shadow-sm transition active:scale-95">
+            <i class="fa-solid fa-drumstick-bite text-amber-600 ml-1"></i>
+            <span>قائمة الدجاج (Chicken)</span>
+          </button>
+          <button onclick="filterCategory('meat')" data-cat="meat" class="cat-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-stone-700 hover:bg-stone-100 border border-stone-200 shadow-sm transition active:scale-95">
+            <i class="fa-solid fa-crown text-amber-500 ml-1"></i>
+            <span>اللحوم والكبسة (Meat & Kabsa)</span>
+          </button>
+          <button onclick="filterCategory('stews')" data-cat="stews" class="cat-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-stone-700 hover:bg-stone-100 border border-stone-200 shadow-sm transition active:scale-95">
+            <i class="fa-solid fa-bowl-food text-amber-700 ml-1"></i>
+            <span>الصالونة والشعبيات (Saloona)</span>
+          </button>
+          <button onclick="filterCategory('sides')" data-cat="sides" class="cat-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-stone-700 hover:bg-stone-100 border border-stone-200 shadow-sm transition active:scale-95">
+            <i class="fa-solid fa-mug-hot text-amber-800 ml-1"></i>
+            <span>المشروبات والكرك (Drinks & Sides)</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Menu Grid Container -->
+      <div id="dishes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+      <!-- Empty State for Search / Filters -->
+      <div id="no-results" class="hidden text-center py-16">
+        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-stone-200 text-stone-500 flex items-center justify-center text-2xl">
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+        <h4 class="text-lg font-bold text-stone-800 font-arabic-calligraphy">لم نجد أي طبق يطابق بحثك</h4>
+        <p class="text-stone-500 text-sm mt-1">يرجى تجربة كلمات أخرى أو استعراض جميع الأصناف</p>
+        <button onclick="clearSearch()" class="mt-4 px-4 py-2 bg-maroon-800 text-white rounded-xl text-xs font-bold">
+          عرض كل المأكولات
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Storefront & Location Section (Photos & Ain Snan Details) -->
+  <section id="storefront-section" class="py-16 bg-white border-y border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left: Real Storefront Photo Card -->
+        <div class="lg:col-span-6 space-y-4">
+          <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white ring-1 ring-stone-200 bg-stone-900 group">
+            
+            <!-- Real photo aesthetic container matching IMG_20261015_141148.jpg -->
+            <div class="aspect-[4/3] relative bg-stone-800">
+              <img 
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80" 
+                alt="مطعم ترتيب - كنار عين سنان قطر" 
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-700 brightness-95"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/20 to-transparent"></div>
+              
+              <!-- Storefront Sign Overlay matching original photo -->
+              <div class="absolute top-4 right-4 bg-maroon-800 text-white px-4 py-1.5 rounded-xl text-sm font-bold shadow-lg border border-amber-400/40 font-arabic-calligraphy">
+                مطعم ترتيب • كنار عين سنان
+              </div>
+
+              <div class="absolute bottom-4 right-4 left-4 text-white">
+                <span class="text-amber-400 text-xs font-bold block mb-1">فرع كنار عين سنان (Kenar Ain Snan)</span>
+                <p class="text-sm font-semibold text-stone-200 leading-snug">
+                  موقعنا في مجمع كنار عين سنان بجوار زاجل ماركت، مجهز بصالة استقبال وجلسات مريحة وتكييف عالي الجودة.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-4 bg-stone-900 text-stone-300 flex items-center justify-between text-xs border-t border-stone-800">
+              <span class="flex items-center gap-1.5 text-emerald-400 font-bold">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                مواقف سيارات واسعة ومجانية متوفرة
+              </span>
+              <span class="text-stone-400">Ain Snan, Qatar</span>
+            </div>
+
+          </div>
+
+          <!-- Secondary Thumbnails / Atmosphere -->
+          <div class="grid grid-cols-3 gap-3">
+            <div class="rounded-xl overflow-hidden aspect-video bg-stone-100 border border-stone-200">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" alt="صالة الطعام" class="w-full h-full object-cover" />
+            </div>
+            <div class="rounded-xl overflow-hidden aspect-video bg-stone-100 border border-stone-200">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80" alt="الشواء على الفحم" class="w-full h-full object-cover" />
+            </div>
+            <div class="rounded-xl overflow-hidden aspect-video bg-stone-100 border border-stone-200">
+              <img src="https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=400&q=80" alt="جلسات الضيافة" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Location, Timings & Contact Info -->
+        <div class="lg:col-span-6 space-y-6 text-right">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-maroon-100 text-maroon-900 text-xs font-black">
+            <i class="fa-solid fa-map-pin text-maroon-700"></i>
+            <span id="txt-location-badge">موقع المطعم وساعات العمل</span>
+          </div>
+
+          <h3 class="text-3xl font-black text-stone-900 font-arabic-calligraphy" id="txt-location-title">
+            تفضل بزيارتنا في فرعنا أو اطلب استلامك جاهزاً
+          </h3>
+
+          <p class="text-stone-600 leading-relaxed text-sm md:text-base">
+            يقع <strong class="text-maroon-900 font-bold">مطعم ترتيب</strong> في منطقة <strong class="text-stone-900">كنار عين سنان (Kenar Ain Snan)</strong> في دولة قطر. نسعد باستقبالكم لتناول وجباتكم في صالتنا أو تحضير طلباتكم سفري بسرعة فائقة لتكون ساخنة وطازجة فور وصولكم.
+          </p>
+
+          <!-- Highlights List -->
+          <div class="space-y-3.5">
+            <div class="flex items-start gap-3.5 bg-stone-50 p-3.5 rounded-2xl border border-stone-200">
+              <div class="w-10 h-10 rounded-xl bg-maroon-100 text-maroon-800 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-location-dot text-base"></i>
+              </div>
+              <div>
+                <h5 class="font-bold text-stone-900 text-sm font-arabic-calligraphy">العنوان بالتفصيل:</h5>
+                <p class="text-xs text-stone-600 mt-0.5">كنار عين سنان، بجانب زاجل ماركت، شمال دولة قطر (Kenar Ain Snan, Qatar).</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5 bg-stone-50 p-3.5 rounded-2xl border border-stone-200">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-clock text-base"></i>
+              </div>
+              <div>
+                <h5 class="font-bold text-stone-900 text-sm font-arabic-calligraphy">ساعات العمل اليومية:</h5>
+                <p class="text-xs text-stone-600 mt-0.5">السبت إلى الخميس: 10:00 صباحاً – 12:00 منتصف الليل</p>
+                <p class="text-xs text-stone-600">الجمعة: 12:30 ظهراً (بعد صلاة الجمعة) – 12:00 منتصف الليل</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5 bg-stone-50 p-3.5 rounded-2xl border border-stone-200">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+              </div>
+              <div>
+                <h5 class="font-bold text-stone-900 text-sm font-arabic-calligraphy">خدمة الواتساب المعتمدة:</h5>
+                <p class="text-xs text-stone-600 mt-0.5">الرقم المباشر لجميع الطلبات والاستفسارات:</p>
+                <a href="https://wa.me/97455633705" target="_blank" rel="noopener noreferrer" class="text-sm font-black text-emerald-600 hover:text-emerald-700 inline-block mt-0.5" dir="ltr">
+                  +974 5563 3705
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Location Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="https://wa.me/97455633705" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-bold shadow-md hover:shadow-lg transition flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>محادثة واتساب فورية</span>
+            </a>
+            <a href="tel:+97455633705" class="px-5 py-3 bg-stone-900 hover:bg-stone-800 text-white rounded-xl text-sm font-bold transition flex items-center gap-2">
+              <i class="fa-solid fa-phone text-amber-400"></i>
+              <span dir="ltr">+974 5563 3705</span>
+            </a>
+            <a href="https://maps.google.com/?q=Ain+Snan+Qatar" target="_blank" rel="noopener noreferrer" class="px-5 py-3 bg-stone-100 hover:bg-stone-200 text-stone-800 border border-stone-300 rounded-xl text-sm font-bold transition flex items-center gap-2">
+              <i class="fa-solid fa-compass text-maroon-800"></i>
+              <span>فتح خرائط جوجل</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Slide-Over Cart Drawer -->
+  <div id="cart-drawer-backdrop" onclick="toggleCartDrawer(false)" class="fixed inset-0 bg-stone-950/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+  <div id="cart-drawer" class="fixed top-0 bottom-0 right-0 w-full max-w-md bg-white z-50 shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-out border-l border-stone-200">
+    
+    <!-- Drawer Header -->
+    <div class="p-5 bg-gradient-to-r from-maroon-900 to-crimson-dark text-white flex items-center justify-between border-b border-maroon-800">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-amber-300">
+          <i class="fa-solid fa-bag-shopping text-lg"></i>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold font-arabic-calligraphy" id="drawer-title">سلة الطلبات - مطعم ترتيب</h3>
+          <span class="text-xs text-maroon-200" id="drawer-subtitle"><span id="drawer-items-count">0</span> أصناف مضافة</span>
+        </div>
+      </div>
+      <button onclick="toggleCartDrawer(false)" class="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition" title="إغلاق السلة">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Sadu Ribbon under header -->
+    <div class="h-1.5 w-full sadu-border-ribbon"></div>
+
+    <!-- Scrollable Drawer Body -->
+    <div class="flex-1 overflow-y-auto p-5 space-y-6">
+      
+      <!-- Cart Items List Container -->
+      <div id="cart-items-container" class="space-y-3">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Empty Cart Message -->
+      <div id="cart-empty-message" class="text-center py-12 space-y-3">
+        <div class="w-16 h-16 rounded-full bg-stone-100 text-stone-400 flex items-center justify-center mx-auto text-2xl">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+        <h4 class="font-bold text-stone-800 font-arabic-calligraphy text-base">سلة طلباتك فارغة حالياً</h4>
+        <p class="text-xs text-stone-500 max-w-xs mx-auto">تصفح وجبات الدجاج، المجبوس، الكبسة والصالونة وأضف ما تشتهيه بضغطة زر واحدة!</p>
+        <button onclick="toggleCartDrawer(false)" class="mt-2 px-4 py-2 bg-maroon-800 text-white rounded-xl text-xs font-bold shadow hover:bg-maroon-900 transition">
+          تصفح المنيو الآن
+        </button>
+      </div>
+
+      <!-- Order Details Form (Shown when cart has items) -->
+      <div id="cart-order-form" class="space-y-4 pt-4 border-t border-stone-200 hidden">
+        
+        <h4 class="font-bold text-stone-900 text-sm font-arabic-calligraphy flex items-center gap-2">
+          <i class="fa-solid fa-clipboard-list text-maroon-800"></i>
+          <span>بيانات استلام الطلب</span>
+        </h4>
+
+        <!-- Order Type Selection -->
+        <div class="grid grid-cols-3 gap-2">
+          <label class="cursor-pointer">
+            <input type="radio" name="orderType" value="سفري (Takeaway)" checked onchange="updateOrderType(this.value)" class="peer sr-only">
+            <div class="p-2.5 rounded-xl border border-stone-200 text-center peer-checked:border-maroon-800 peer-checked:bg-maroon-50 peer-checked:text-maroon-900 text-stone-600 transition">
+              <i class="fa-solid fa-bag-shopping block text-sm mb-1 text-maroon-700"></i>
+              <span class="text-xs font-bold block">سفري</span>
+            </div>
+          </label>
+          <label class="cursor-pointer">
+            <input type="radio" name="orderType" value="محلي (Dine-in)" onchange="updateOrderType(this.value)" class="peer sr-only">
+            <div class="p-2.5 rounded-xl border border-stone-200 text-center peer-checked:border-maroon-800 peer-checked:bg-maroon-50 peer-checked:text-maroon-900 text-stone-600 transition">
+              <i class="fa-solid fa-utensils block text-sm mb-1 text-amber-600"></i>
+              <span class="text-xs font-bold block">محلي</span>
+            </div>
+          </label>
+          <label class="cursor-pointer">
+            <input type="radio" name="orderType" value="توصيل (Delivery)" onchange="updateOrderType(this.value)" class="peer sr-only">
+            <div class="p-2.5 rounded-xl border border-stone-200 text-center peer-checked:border-maroon-800 peer-checked:bg-maroon-50 peer-checked:text-maroon-900 text-stone-600 transition">
+              <i class="fa-solid fa-motorcycle block text-sm mb-1 text-emerald-600"></i>
+              <span class="text-xs font-bold block">توصيل</span>
+            </div>
+          </label>
+        </div>
+
+        <!-- Name Input -->
+        <div>
+          <label class="block text-xs font-bold text-stone-700 mb-1">الاسم الكريم:</label>
+          <input type="text" id="cust-name" placeholder="مثال: محمد الهاجري" class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300 focus:outline-none focus:ring-1 focus:ring-maroon-800" />
+        </div>
+
+        <!-- Phone / Table / Address Input -->
+        <div id="location-input-group">
+          <label class="block text-xs font-bold text-stone-700 mb-1" id="location-input-label">العنوان أو رقم الطاولة (اختياري):</label>
+          <input type="text" id="cust-location" placeholder="عين سنان، قرب المسجد / رقم الطاولة..." class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300 focus:outline-none focus:ring-1 focus:ring-maroon-800" />
+        </div>
+
+        <!-- Special Request Notes -->
+        <div>
+          <label class="block text-xs font-bold text-stone-700 mb-1">ملاحظات خاصة على الوجبات:</label>
+          <textarea id="cust-notes" rows="2" placeholder="زيادة داكوس حار، ليمون إضافي، بصل مقرمش، قليل الفلفل..." class="w-full px-3 py-2 text-xs rounded-xl border border-stone-300 focus:outline-none focus:ring-1 focus:ring-maroon-800 resize-none"></textarea>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Drawer Footer: Calculations & WhatsApp Checkout -->
+    <div id="cart-drawer-footer" class="p-5 bg-stone-50 border-t border-stone-200 space-y-3 hidden">
+      
+      <!-- Subtotal & Total Breakdown -->
+      <div class="space-y-1.5 text-xs">
+        <div class="flex justify-between text-stone-600">
+          <span>المجموع الفرعي:</span>
+          <span class="font-bold" id="cart-subtotal-price">0 QAR</span>
+        </div>
+        <div class="flex justify-between text-stone-600">
+          <span>التجهيز والتغليف:</span>
+          <span class="font-bold text-emerald-600">مجاناً (0 ر.ق)</span>
+        </div>
+        <div class="flex justify-between text-sm font-black text-stone-900 pt-2 border-t border-stone-200">
+          <span>المجموع الكلي:</span>
+          <span class="text-maroon-800 text-base" id="cart-total-price">0 QAR</span>
+        </div>
+      </div>
+
+      <!-- CRITICAL REQUIREMENT: Direct WhatsApp Send to +97455633705 -->
+      <button 
+        onclick="checkoutWhatsApp()" 
+        class="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 active:scale-98 text-white font-black text-sm shadow-lg shadow-emerald-950/20 transition flex items-center justify-center gap-2 group"
+      >
+        <i class="fa-brands fa-whatsapp text-xl text-white group-hover:scale-110 transition"></i>
+        <span>إرسال الطلب عبر الواتساب (+974 5563 3705)</span>
+      </button>
+
+      <div class="text-center">
+        <span class="text-[10px] text-stone-400">سيتم فتح الواتساب تلقائياً مع تفاصيل طلبك لإرساله إلى المطعم فوراً</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Toast Notification Pop-up -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-stone-900/95 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 text-xs md:text-sm font-bold border border-stone-700 pointer-events-none opacity-0 translate-y-4 transition-all duration-300">
+    <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+    <span id="toast-message">تمت إضافة الوجبة إلى السلة</span>
+  </div>
+
+  <!-- Floating Direct WhatsApp Quick Action Button -->
+  <a 
+    href="https://wa.me/97455633705" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="fixed bottom-6 right-6 z-40 bg-emerald-600 hover:bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl shadow-emerald-900/40 hover:scale-110 active:scale-95 transition ring-4 ring-white" 
+    title="تواصل معنا عبر الواتساب: +974 5563 3705"
+  >
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+    <span class="sr-only">تواصل عبر الواتساب</span>
+  </a>
+
+  <!-- Footer Section -->
+  <footer class="bg-stone-950 text-stone-300 pt-16 pb-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-stone-800">
+        
+        <!-- Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-maroon-800 to-crimson text-white flex items-center justify-center ring-1 ring-gold-400">
+              <span class="font-arabic-calligraphy text-2xl font-bold text-amber-300">ت</span>
+            </div>
+            <div>
+              <h4 class="text-xl font-black text-white font-arabic-calligraphy">مطعم ترتيب</h4>
+              <p class="text-xs text-stone-400">Tarteeb Restaurant - Qatar</p>
+            </div>
+          </div>
+          <p class="text-xs text-stone-400 leading-relaxed">
+            مطعم قطري عريق متخصص في إعداد أشهى أطباق المجبوس والكبسة، الدجاج المحمر والمشوي على الفحم، والصالونة الطازجة بنكهة الضيافة الخليجية الأصيلة.
+          </p>
+          <div class="flex items-center gap-3 pt-1">
+            <a href="https://wa.me/97455633705" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-emerald-900/40 text-emerald-400 hover:bg-emerald-800 flex items-center justify-center transition">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="tel:+97455633705" class="w-8 h-8 rounded-lg bg-stone-800 text-amber-400 hover:bg-stone-700 flex items-center justify-center transition">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="https://maps.google.com/?q=Ain+Snan+Qatar" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-stone-800 text-stone-300 hover:bg-stone-700 flex items-center justify-center transition">
+              <i class="fa-solid fa-location-dot"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Menu Links -->
+        <div class="space-y-3">
+          <h5 class="text-sm font-bold text-white uppercase tracking-wider font-arabic-calligraphy">أقسام المنيو السريعة</h5>
+          <ul class="space-y-2 text-xs text-stone-400">
+            <li><a href="#menu-section" onclick="filterCategory('chicken')" class="hover:text-amber-400 transition">دجاج مكينة ومجبوس</a></li>
+            <li><a href="#menu-section" onclick="filterCategory('chicken')" class="hover:text-amber-400 transition">دجاج مشوي مع عيش أحمر</a></li>
+            <li><a href="#menu-section" onclick="filterCategory('meat')" class="hover:text-amber-400 transition">كبسة لحم ملوكية فاخرة</a></li>
+            <li><a href="#menu-section" onclick="filterCategory('stews')" class="hover:text-amber-400 transition">صالونة دجاج شعبية بالبطاطس</a></li>
+            <li><a href="#menu-section" onclick="filterCategory('sides')" class="hover:text-amber-400 transition">شاي كرك قطري مهيّل</a></li>
+          </ul>
+        </div>
+
+        <!-- Working Hours & Location -->
+        <div class="space-y-3">
+          <h5 class="text-sm font-bold text-white uppercase tracking-wider font-arabic-calligraphy">موقع الفرع وأوقات الدوام</h5>
+          <div class="text-xs text-stone-400 space-y-1.5 leading-relaxed">
+            <p><strong class="text-stone-300">📍 الفرع:</strong> مجمع كنار عين سنان، قطر</p>
+            <p><strong class="text-stone-300">🕒 السبت - الخميس:</strong> 10:00 ص – 12:00 منتصف الليل</p>
+            <p><strong class="text-stone-300">🕌 الجمعة:</strong> 12:30 ظهراً – 12:00 منتصف الليل</p>
+            <p class="text-amber-400 font-semibold pt-1">خدمة تجهيز واستلام الطلبات بالسيارة متوفرة</p>
+          </div>
+        </div>
+
+        <!-- WhatsApp Hotline Card -->
+        <div class="space-y-3 bg-stone-900 p-4 rounded-2xl border border-stone-800">
+          <h5 class="text-sm font-bold text-amber-300 font-arabic-calligraphy">الرقم المعتمد للطلبات</h5>
+          <p class="text-xs text-stone-400">
+            للحجز والولائم وطلبات الوجبات اليومية، تواصلوا معنا مباشرة:
+          </p>
+          <a href="https://wa.me/97455633705" target="_blank" rel="noopener noreferrer" class="block bg-emerald-600 hover:bg-emerald-500 text-white text-center py-2.5 rounded-xl font-bold text-xs transition shadow-md">
+            <i class="fa-brands fa-whatsapp text-sm mr-1"></i>
+            واتساب: +974 5563 3705
+          </a>
+          <a href="tel:+97455633705" class="block bg-stone-800 hover:bg-stone-700 text-stone-200 text-center py-2 rounded-xl font-semibold text-xs transition">
+            <i class="fa-solid fa-phone text-xs mr-1 text-amber-400"></i>
+            اتصال هاتفي: +974 5563 3705
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright Notice -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-3">
+        <p>© 2026 مطعم ترتيب (Tarteeb Restaurant) - كنار عين سنان، دولة قطر. جميع الحقوق محفوظة.</p>
+        <p class="flex items-center gap-2">
+          <span>نعتز بخدمتكم بأجود المأكولات القطرية الأصيلة</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-maroon-700"></span>
+          <span>قطر 🇶🇦</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript Application Logic -->
+  <script>
+    // -------------------------------------------------------------
+    // Dishes Data (Direct from Menu Image + Authentic Qatari Selection)
+    // -------------------------------------------------------------
+    const dishesData = [
+      {
+        id: 1,
+        nameAr: "دجاج مكينة مع الأرز",
+        nameEn: "Rotisserie Machine Chicken with Rice",
+        category: "chicken",
+        price: 22,
+        image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=600&q=80",
+        tagAr: "قائمة الدجاج",
+        tagEn: "Chicken Menu",
+        descAr: "دجاج شواية مكينة محمر ومقرمش من الخارج وطري من الداخل، يقدم فوق أرز أصفر مع شرائح الجزر والبصل المكرمل ومرق الداكوس.",
+        descEn: "Juicy golden rotisserie chicken roasted to perfection, served over fragrant yellow spiced basmati rice with carrots & caramelized onions.",
+        popular: true
+      },
+      {
+        id: 2,
+        nameAr: "مجبوس دجاج ترتيب",
+        nameEn: "Signature Chicken Majboos",
+        category: "chicken",
+        price: 24,
+        image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80",
+        tagAr: "الطبق الأشهر",
+        tagEn: "Best Seller",
+        descAr: "سيد المائدة القطرية: أرز بسمتي متبل بخلطة بهارات مجبوس ترتيب، اللومي الأسود، الهيل، مع نصف دجاجة ذهبية وصلصة الداكوس الحارة.",
+        descEn: "Qatar's national pride: slow-simmered basmati rice infused with black dried lime (loomi), cardamom, saffron, and tender spiced chicken.",
+        popular: true
+      },
+      {
+        id: 3,
+        nameAr: "صالونة دجاج",
+        nameEn: "Traditional Chicken Saloona",
+        category: "stews",
+        price: 24,
+        image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&q=80",
+        tagAr: "طعم قطري أصيل",
+        tagEn: "Traditional Stew",
+        descAr: "صالونة دجاج خاثرة ومسبكة بمرق الطماطم الغني وقطع البطاطس والكوسا والبهارات الخليجية، تُقدم ساخنة مع الأرز الأبيض أو الخبز.",
+        descEn: "Hearty traditional Qatari stew with tender chicken cuts, chunky potatoes, zucchini simmered in a richly spiced tomato sauce.",
+        popular: false
+      },
+      {
+        id: 4,
+        nameAr: "دجاج مشوي مع عيش أحمر",
+        nameEn: "Charcoal Grilled Chicken with Red Rice",
+        category: "chicken",
+        price: 24,
+        image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80",
+        tagAr: "على الفحم",
+        tagEn: "Charcoal Grilled",
+        descAr: "نصف دجاجة متبلة ببهارات الشواء ومدخنة على الفحم الحار، تُقدم مع عيش أحمر طماطمي حار ومتبل على الطريقة القطرية التراثية.",
+        descEn: "Charcoal-grilled smoky chicken marinated in Gulf spices, served over authentic fiery red tomato basmati rice with lime.",
+        popular: true
+      },
+      {
+        id: 5,
+        nameAr: "برياني دجاج فاخر",
+        nameEn: "Royal Chicken Biryani",
+        category: "chicken",
+        price: 26,
+        image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80",
+        tagAr: "مميز",
+        tagEn: "Chef Special",
+        descAr: "أرز برياني طويل الحبة مطبوخ بطبقات الزعفران والنعناع، مزين بالبصل المقرمش والمكسرات الذهبية وقطع دجاج متبلة بالبهارات الغنية.",
+        descEn: "Aromatic layered basmati rice with tender chicken, infused with saffron, caramelized onions, toasted cashews, and fresh mint.",
+        popular: false
+      },
+      {
+        id: 6,
+        nameAr: "كبسة لحم ترتيب الملوكية",
+        nameEn: "Tarteeb Royal Lamb Kabsa",
+        category: "meat",
+        price: 65,
+        image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80",
+        tagAr: "ولائم ولحوم",
+        tagEn: "Royal Lamb",
+        descAr: "قطعة لحم غنم طازجة ذائبة مطبوخة على نار هادئة، تُقدم فوق أرز كبسة فاخر مبهر بالقرنفل والقرفة والزبيب والمكسرات المقرمشة.",
+        descEn: "Tender, slow-braised fresh lamb shank served over fragrant golden spiced Kabsa rice garnished with roasted almonds and raisins.",
+        popular: true
+      },
+      {
+        id: 7,
+        nameAr: "برياني لحم نعيمي",
+        nameEn: "Special Lamb Biryani",
+        category: "meat",
+        price: 38,
+        image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80",
+        tagAr: "لحم طازج",
+        tagEn: "Fresh Lamb",
+        descAr: "قطع لحم ناعمة ومتبلة بتوابل البرياني العطرة مع الأرز المبهر بالزعفران والزنجبيل واللبن والنعناع الأخضر.",
+        descEn: "Succulent braised lamb layered with fragrant aged basmati rice, saffron, and aromatic spices. Served with raita.",
+        popular: false
+      },
+      {
+        id: 8,
+        nameAr: "دجاج شواية كامل مع الأرز",
+        nameEn: "Whole Rotisserie Chicken with Rice Platter",
+        category: "chicken",
+        price: 40,
+        image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=600&q=80",
+        tagAr: "وجبة عائلية",
+        tagEn: "Family Size",
+        descAr: "دجاجة كاملة محمرة على الشواية تكفي شخصين إلى ثلاثة، تُقدم مع صينية أرز أصفر أو عيش أحمر وصلصة الداكوس والبصل والليمون.",
+        descEn: "Whole golden rotisserie roasted chicken served with a generous platter of aromatic basmati rice, daqoos, and pickles.",
+        popular: true
+      },
+      {
+        id: 9,
+        nameAr: "أرز أبيض مع مرق صالونة",
+        nameEn: "White Basmati Rice with Saloona Gravy",
+        category: "stews",
+        price: 15,
+        image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&q=80",
+        tagAr: "وجبة خفيفة",
+        tagEn: "Light Meal",
+        descAr: "أرز بسمتي أبيض نثري ومفلفل بالسمن البلدي، يُقدم مع زبدية من صالونة الخضار الغنية والمسبكة.",
+        descEn: "Fluffy steamed long-grain white basmati rice served with a side bowl of rich, spiced vegetable saloona gravy.",
+        popular: false
+      },
+      {
+        id: 10,
+        nameAr: "شاي كرك قطري أصيل",
+        nameEn: "Traditional Qatari Karak Tea",
+        category: "sides",
+        price: 3,
+        image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80",
+        tagAr: "مشروب تقليدي",
+        tagEn: "Hot Drink",
+        descAr: "شاي كرك ثقيل ومغلي بالحليب المبخر وحبات الهيل المطحونة ونفحة زعفران، ختام مثالي لكل وجبة قطرية أصيلة.",
+        descEn: "Freshly brewed strong spiced black tea simmered with evaporated milk, crushed green cardamom pods, and saffron hint.",
+        popular: true
+      },
+      {
+        id: 11,
+        nameAr: "سلطة داكوس ولبن بالخيار",
+        nameEn: "Spicy Daqoos & Mint Cucumber Laban",
+        category: "sides",
+        price: 5,
+        image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
+        tagAr: "مقبلات",
+        tagEn: "Side Salad",
+        descAr: "صلصة الداكوس الحارة بالطماطم الطازجة والثوم والفلفل الحار، بجانب لبن رائب مثلج مع شرائح الخيار والنعناع المجفف.",
+        descEn: "Traditional hot garlic tomato daqoos dip alongside cooling mint cucumber yogurt dip, perfect accompaniment for rice.",
+        popular: false
+      },
+      {
+        id: 12,
+        nameAr: "مشروبات غازية باردة (بيبسي / سفن آب)",
+        nameEn: "Chilled Soft Drinks (Pepsi / 7Up / Mirinda)",
+        category: "sides",
+        price: 3,
+        image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+        tagAr: "مشروب مثلج",
+        tagEn: "Cold Drink",
+        descAr: "علبة مشروب غازي باردة ومنعشة (بيبسي، دايت بيبسي، سفن آب، ميرندا حمضيات) حسب اختيارك.",
+        descEn: "Ice-cold canned refreshing beverage of your choice (Pepsi, Diet Pepsi, 7Up, Mirinda Citrus).",
+        popular: false
+      }
+    ];
+
+    // -------------------------------------------------------------
+    // App State
+    // -------------------------------------------------------------
+    let currentLang = 'ar'; // 'ar' or 'en'
+    let currentCategory = 'all';
+    let searchQuery = '';
+    let cart = []; // Array of { id, nameAr, nameEn, price, image, quantity }
+    let selectedOrderType = 'سفري (Takeaway)';
+
+    // WhatsApp Constant Number (Mandated requirement: +97455633705)
+    const TARTEEB_WHATSAPP_NUMBER = "97455633705";
+
+    // -------------------------------------------------------------
+    // Initialization
+    // -------------------------------------------------------------
+    document.addEventListener('DOMContentLoaded', () => {
+      loadCartFromStorage();
+      renderDishes();
+      updateCartUI();
+    });
+
+    // -------------------------------------------------------------
+    // Render Dishes Grid
+    // -------------------------------------------------------------
+    function renderDishes() {
+      const container = document.getElementById('dishes-grid');
+      const emptyState = document.getElementById('no-results');
+      
+      const filtered = dishesData.filter(dish => {
+        const matchesCategory = currentCategory === 'all' || dish.category === currentCategory;
+        const matchesSearch = !searchQuery || 
+          dish.nameAr.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          dish.nameEn.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          dish.descAr.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          dish.descEn.toLowerCase().includes(searchQuery.toLowerCase());
+        return matchesCategory && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      } else {
+        emptyState.classList.add('hidden');
+      }
+
+      container.innerHTML = filtered.map(dish => {
+        const dishName = currentLang === 'ar' ? dish.nameAr : dish.nameEn;
+        const subName = currentLang === 'ar' ? dish.nameEn : dish.nameAr;
+        const dishDesc = currentLang === 'ar' ? dish.descAr : dish.descEn;
+        const dishTag = currentLang === 'ar' ? dish.tagAr : dish.tagEn;
+        const addBtnText = currentLang === 'ar' ? 'أضف للسلة' : 'Add to Cart';
+
+        return `
+          <div class="bg-white rounded-3xl overflow-hidden border border-stone-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+            <div>
+              <!-- Dish Image with Overlay Tag -->
+              <div class="relative aspect-[4/3] overflow-hidden bg-stone-100">
+                <img 
+                  src="${dish.image}" 
+                  alt="${dish.nameAr}" 
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-108 transition duration-700 ease-out"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition"></div>
+                
+                <!-- Category / Popular Tag -->
+                <span class="absolute top-3 right-3 ${dish.popular ? 'bg-amber-500 text-stone-950 font-black' : 'bg-maroon-800/90 text-white font-bold'} backdrop-blur-md text-[11px] px-3 py-1 rounded-full shadow-md">
+                  ${dishTag}
+                </span>
+
+                <!-- Price Badge -->
+                <div class="absolute bottom-3 left-3 bg-stone-950/85 backdrop-blur-md text-amber-400 font-black text-sm px-3 py-1 rounded-xl border border-white/10 shadow-lg">
+                  ${dish.price} QAR
+                </div>
+              </div>
+
+              <!-- Dish Info -->
+              <div class="p-5 text-right">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-[11px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200/60 uppercase">
+                    ${dish.category}
+                  </span>
+                  <span class="text-xs text-stone-400 font-medium">${subName}</span>
+                </div>
+
+                <h3 class="text-lg font-bold text-stone-900 font-arabic-calligraphy mb-1 group-hover:text-maroon-800 transition">
+                  ${dishName}
+                </h3>
+
+                <p class="text-stone-500 text-xs leading-relaxed line-clamp-2 mb-2">
+                  ${dishDesc}
+                </p>
+              </div>
+            </div>
+
+            <!-- Card Bottom Action -->
+            <div class="px-5 pb-5 pt-2 border-t border-stone-100 flex items-center justify-between">
+              <div class="text-right">
+                <span class="text-[10px] text-stone-400 block">${currentLang === 'ar' ? 'السعر' : 'Price'}</span>
+                <span class="text-lg font-black text-maroon-900 leading-none">${dish.price} <small class="text-xs font-bold text-stone-500">ر.ق</small></span>
+              </div>
+
+              <button 
+                onclick="addToCart(${dish.id}, '${dish.nameAr}', '${dish.nameEn}', ${dish.price}, '${dish.image}')"
+                class="px-4 py-2.5 bg-maroon-800 hover:bg-maroon-900 active:scale-95 text-white rounded-xl text-xs font-bold shadow-md hover:shadow-maroon-900/30 transition flex items-center gap-1.5"
+              >
+                <i class="fa-solid fa-plus text-[11px] text-amber-300"></i>
+                <span>${addBtnText}</span>
+              </button>
+            </div>
+
+          </div>
+        `;
+      }).join('');
+    }
+
+    // -------------------------------------------------------------
+    // Filter & Search Handlers
+    // -------------------------------------------------------------
+    function filterCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-pill').forEach(btn => {
+        if (btn.getAttribute('data-cat') === cat) {
+          btn.className = "cat-pill active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-maroon-800 text-white shadow-sm transition active:scale-95";
+        } else {
+          btn.className = "cat-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-stone-700 hover:bg-stone-100 border border-stone-200 shadow-sm transition active:scale-95";
+        }
+      });
+      renderDishes();
+    }
+
+    function handleSearch(val) {
+      searchQuery = val.trim();
+      const clearBtn = document.getElementById('clear-search-btn');
+      if (searchQuery) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+      renderDishes();
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('dish-search-input');
+      input.value = '';
+      searchQuery = '';
+      document.getElementById('clear-search-btn').classList.add('hidden');
+      filterCategory('all');
+    }
+
+    // -------------------------------------------------------------
+    // Cart Logic
+    // -------------------------------------------------------------
+    function addToCart(id, nameAr, nameEn, price, image) {
+      const existing = cart.find(item => item.id === id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({
+          id,
+          nameAr,
+          nameEn,
+          price,
+          image,
+          quantity: 1
+        });
+      }
+      saveCartToStorage();
+      updateCartUI();
+      
+      const itemName = currentLang === 'ar' ? nameAr : nameEn;
+      showToast(`${currentLang === 'ar' ? 'تمت إضافة' : 'Added'} "${itemName}" ${currentLang === 'ar' ? 'إلى السلة' : 'to Cart'}`);
+      
+      // Animate cart badge
+      const badge = document.getElementById('cart-count-badge');
+      badge.classList.add('scale-125');
+      setTimeout(() => badge.classList.remove('scale-125'), 200);
+    }
+
+    function updateItemQuantity(id, delta) {
+      const itemIndex = cart.findIndex(item => item.id === id);
+      if (itemIndex > -1) {
+        cart[itemIndex].quantity += delta;
+        if (cart[itemIndex].quantity <= 0) {
+          cart.splice(itemIndex, 1);
+        }
+      }
+      saveCartToStorage();
+      updateCartUI();
+    }
+
+    function removeFromCart(id) {
+      cart = cart.filter(item => item.id !== id);
+      saveCartToStorage();
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+      const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+      // Badges & Counters
+      document.getElementById('cart-count-badge').textContent = totalCount;
+      document.getElementById('cart-btn-total').textContent = `${totalPrice} ر.ق`;
+      document.getElementById('drawer-items-count').textContent = totalCount;
+
+      const container = document.getElementById('cart-items-container');
+      const emptyMsg = document.getElementById('cart-empty-message');
+      const orderForm = document.getElementById('cart-order-form');
+      const drawerFooter = document.getElementById('cart-drawer-footer');
+      const subtotalEl = document.getElementById('cart-subtotal-price');
+      const totalEl = document.getElementById('cart-total-price');
+
+      if (cart.length === 0) {
+        container.innerHTML = '';
+        emptyMsg.classList.remove('hidden');
+        orderForm.classList.add('hidden');
+        drawerFooter.classList.add('hidden');
+      } else {
+        emptyMsg.classList.add('hidden');
+        orderForm.classList.remove('hidden');
+        drawerFooter.classList.remove('hidden');
+
+        subtotalEl.textContent = `${totalPrice} QAR`;
+        totalEl.textContent = `${totalPrice} QAR`;
+
+        container.innerHTML = cart.map(item => {
+          const title = currentLang === 'ar' ? item.nameAr : item.nameEn;
+          const itemTotal = item.price * item.quantity;
+
+          return `
+            <div class="flex items-center gap-3 p-3 rounded-2xl bg-stone-50 border border-stone-200/80 shadow-sm">
+              <img src="${item.image}" alt="${item.nameAr}" class="w-14 h-14 rounded-xl object-cover shrink-0 border border-stone-200" />
+              
+              <div class="flex-1 min-w-0 text-right">
+                <h5 class="text-xs font-bold text-stone-900 truncate font-arabic-calligraphy">${title}</h5>
+                <span class="text-[11px] text-maroon-800 font-semibold block">${item.price} QAR <span class="text-stone-400">× ${item.quantity}</span></span>
+                <span class="text-xs font-black text-stone-900">${itemTotal} QAR</span>
+              </div>
+
+              <div class="flex items-center gap-1.5 bg-white px-2 py-1 rounded-xl border border-stone-200 shadow-inner">
+                <button onclick="updateItemQuantity(${item.id}, -1)" class="w-6 h-6 rounded-lg bg-stone-100 hover:bg-stone-200 text-stone-700 flex items-center justify-center text-xs font-bold transition">
+                  <i class="fa-solid fa-minus text-[9px]"></i>
+                </button>
+                <span class="w-6 text-center text-xs font-black text-stone-800">${item.quantity}</span>
+                <button onclick="updateItemQuantity(${item.id}, 1)" class="w-6 h-6 rounded-lg bg-maroon-800 hover:bg-maroon-900 text-white flex items-center justify-center text-xs font-bold transition">
+                  <i class="fa-solid fa-plus text-[9px]"></i>
+                </button>
+              </div>
+
+              <button onclick="removeFromCart(${item.id})" class="text-stone-400 hover:text-red-600 transition p-1" title="حذف">
+                <i class="fa-solid fa-trash-can text-xs"></i>
+              </button>
+            </div>
+          `;
+        }).join('');
+      }
+    }
+
+    function toggleCartDrawer(open) {
+      const drawer = document.getElementById('cart-drawer');
+      const backdrop = document.getElementById('cart-drawer-backdrop');
+
+      if (open) {
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100', 'pointer-events-auto');
+        drawer.classList.remove('translate-x-full');
+        document.body.classList.add('overflow-hidden');
+      } else {
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+        drawer.classList.add('translate-x-full');
+        document.body.classList.remove('overflow-hidden');
+      }
+    }
+
+    function updateOrderType(val) {
+      selectedOrderType = val;
+      const label = document.getElementById('location-input-label');
+      const input = document.getElementById('cust-location');
+
+      if (val.includes('توصيل') || val.includes('Delivery')) {
+        label.textContent = currentLang === 'ar' ? 'عنوان التوصيل (المنطقة والشارع):' : 'Delivery Address:';
+        input.placeholder = currentLang === 'ar' ? 'مثال: عين سنان، منزل 12، شارع 45...' : 'E.g., Ain Snan, House 12...';
+      } else if (val.includes('محلي') || val.includes('Dine-in')) {
+        label.textContent = currentLang === 'ar' ? 'رقم الطاولة في الصالة:' : 'Table Number:';
+        input.placeholder = currentLang === 'ar' ? 'مثال: طاولة 4' : 'E.g., Table 4';
+      } else {
+        label.textContent = currentLang === 'ar' ? 'وقت الاستلام أو الملاحظة (اختياري):' : 'Pickup Time (Optional):';
+        input.placeholder = currentLang === 'ar' ? 'مثال: الاستلام خلال 20 دقيقة' : 'E.g., Ready in 20 mins';
+      }
+    }
+
+    // -------------------------------------------------------------
+    // CRITICAL REQUIREMENT: WhatsApp Checkout Generator
+    // -------------------------------------------------------------
+    function checkoutWhatsApp() {
+      if (cart.length === 0) {
+        showToast(currentLang === 'ar' ? 'سلة الطلبات فارغة!' : 'Your cart is empty!');
+        return;
+      }
+
+      const name = document.getElementById('cust-name').value.trim() || 'زبون كريم (Guest)';
+      const location = document.getElementById('cust-location').value.trim() || 'حسب الطلب';
+      const notes = document.getElementById('cust-notes').value.trim() || 'لا توجد ملاحظات إضافية';
+      const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+      // Build beautifully formatted WhatsApp text
+      let msg = `*طلب جديد من مطعم ترتيب - قطر*\n`;
+      msg += `*NEW ORDER - TARTEEB RESTAURANT*\n`;
+      msg += `━━━━━━━━━━━━━━━━━━━━━\n`;
+      msg += `👤 *العميل / Customer:* ${name}\n`;
+      msg += `🍴 *نوع الطلب / Type:* ${selectedOrderType}\n`;
+      msg += `📍 *الموقع / التفاصيل:* ${location}\n`;
+      msg += `━━━━━━━━━━━━━━━━━━━━━\n`;
+      msg += `*قائمة الوجبات / Items:* \n`;
+
+      cart.forEach((item, index) => {
+        const itemTotal = item.price * item.quantity;
+        msg += `${index + 1}. *${item.nameAr}* (${item.nameEn})\n`;
+        msg += `   └ الكمية: ${item.quantity} × ${item.price} = *${itemTotal} QAR*\n`;
+      });
+
+      msg += `━━━━━━━━━━━━━━━━━━━━━\n`;
+      msg += `💵 *المجموع الإجمالي / Total:* *${totalPrice} QAR*\n`;
+      if (notes && notes !== 'لا توجد ملاحظات إضافية') {
+        msg += `📝 *ملاحظات:* ${notes}\n`;
+      }
+      msg += `━━━━━━━━━━━━━━━━━━━━━\n`;
+      msg += `📍 *الفرع:* كنار عين سنان، قطر\n`;
+      msg += `شكراً لاختياركم مطعم ترتيب! 🙏`;
+
+      // Formulate target URL with exact WhatsApp number: +97455633705
+      const encodedMsg = encodeURIComponent(msg);
+      const whatsappUrl = `https://wa.me/${TARTEEB_WHATSAPP_NUMBER}?text=${encodedMsg}`;
+
+      // Open WhatsApp directly
+      window.open(whatsappUrl, '_blank');
+    }
+
+    // -------------------------------------------------------------
+    // Language Toggle (Arabic / English)
+    // -------------------------------------------------------------
+    function toggleLanguage() {
+      currentLang = currentLang === 'ar' ? 'en' : 'ar';
+      const html = document.documentElement;
+
+      if (currentLang === 'en') {
+        html.setAttribute('dir', 'ltr');
+        html.setAttribute('lang', 'en');
+        document.getElementById('lang-label').textContent = 'العربية';
+        
+        // Update header & banner text
+        document.getElementById('txt-open-status').textContent = 'Open Now • Daily Fresh Rice & Charcoal Grill';
+        document.getElementById('txt-location-banner').textContent = 'Qatar - Kenar Ain Snan';
+        document.getElementById('txt-whatsapp-direct').textContent = 'Direct WhatsApp Order';
+        document.getElementById('nav-menu').textContent = 'Digital Menu';
+        document.getElementById('nav-chicken').textContent = 'Chicken & Grill Specials';
+        document.getElementById('nav-location').textContent = 'Location & Branch';
+        document.getElementById('cart-btn-label').textContent = 'Your Cart';
+
+        // Hero translations
+        document.getElementById('hero-badge').textContent = 'Tarteeb Restaurant - Kenar Ain Snan, Qatar';
+        document.getElementById('hero-cta-menu').textContent = 'Explore Menu';
+        document.getElementById('hero-cta-whatsapp').textContent = 'Order via WhatsApp';
+        document.getElementById('feat-1').textContent = '100% Fresh Halal';
+        document.getElementById('feat-2').textContent = 'Fast & Fresh Prep';
+        document.getElementById('feat-3').textContent = 'Dine-In, Takeaway, Delivery';
+        document.getElementById('feat-4').textContent = 'Ain Snan Top Rated';
+
+        // Chicken showcase
+        document.getElementById('badge-chicken-menu').textContent = 'From Our Kitchen Menu • Chicken Dishes';
+        document.getElementById('title-chicken-menu').textContent = 'Signature Chicken & Rice Feasts at Tarteeb';
+        document.getElementById('subtitle-chicken-menu').textContent = 'Top favorites cooked daily in Kenar Ain Snan with genuine Qatari flavor';
+        document.getElementById('btn-view-all').textContent = 'View Full Menu';
+
+        // Menu section
+        document.getElementById('txt-digital-menu-badge').textContent = 'Interactive Digital Menu & Fast WhatsApp Checkout';
+        document.getElementById('txt-menu-title').textContent = 'Tarteeb Culinary Specialties';
+        document.getElementById('txt-menu-subtitle').textContent = 'Pick your favorite meal and send your order straight to our branch at +974 5563 3705';
+        document.getElementById('dish-search-input').placeholder = 'Search dishes: Majboos, Kabsa, Charcoal Chicken, Karak...';
+
+        // Drawer
+        document.getElementById('drawer-title').textContent = 'Order Cart - Tarteeb';
+      } else {
+        html.setAttribute('dir', 'rtl');
+        html.setAttribute('lang', 'ar');
+        document.getElementById('lang-label').textContent = 'English';
+
+        document.getElementById('txt-open-status').textContent = 'مفتوح الآن • عيش وطهي يومي طازج';
+        document.getElementById('txt-location-banner').textContent = 'قطر - كنار عين سنان (Kenar Ain Snan)';
+        document.getElementById('txt-whatsapp-direct').textContent = 'طلب واتساب مباشر';
+        document.getElementById('nav-menu').textContent = 'قائمة الطعام (المنيو)';
+        document.getElementById('nav-chicken').textContent = 'قائمة الدجاج والشواية';
+        document.getElementById('nav-location').textContent = 'الموقع والفرع';
+        document.getElementById('cart-btn-label').textContent = 'سلة الطلبات';
+
+        document.getElementById('hero-badge').textContent = 'مطعم ترتيب - كنار عين سنان • أصالة المذاق القطري';
+        document.getElementById('hero-cta-menu').textContent = 'استعرض قائمة الطعام';
+        document.getElementById('hero-cta-whatsapp').textContent = 'اطلب عبر الواتساب';
+        document.getElementById('feat-1').textContent = 'دجاج ولحوم حلال 100%';
+        document.getElementById('feat-2').textContent = 'تحضير سريع وطازج';
+        document.getElementById('feat-3').textContent = 'سفري ومحلي وتوصيل';
+        document.getElementById('feat-4').textContent = 'مذاق عين سنان المفضل';
+
+        document.getElementById('badge-chicken-menu').textContent = 'مستوحاة من منيو الفرع • قائمة الدجاج';
+        document.getElementById('title-chicken-menu').textContent = 'أشهر وجبات الدجاج والأرز في مطعم ترتيب';
+        document.getElementById('subtitle-chicken-menu').textContent = 'الخيارات الأكثر طلباً في كنار عين سنان المطهوة يومياً بأعلى معايير النظافة والاتقان';
+        document.getElementById('btn-view-all').textContent = 'مشاهدة المنيو الكامل';
+
+        document.getElementById('txt-digital-menu-badge').textContent = 'قائمة الطعام الرقمية والطلب السريع';
+        document.getElementById('txt-menu-title').textContent = 'أشهى أطباق مطعم ترتيب';
+        document.getElementById('txt-menu-subtitle').textContent = 'اختر وجبتك المفضلة وأضفها إلى السلة لتجهيز طلبك فورياً وإرساله مباشرة عبر الواتساب إلى فرعنا في كنار عين سنان';
+        document.getElementById('dish-search-input').placeholder = 'ابحث عن وجبة، كبسة، مجبوس، صالونة، كرك...';
+
+        document.getElementById('drawer-title').textContent = 'سلة الطلبات - مطعم ترتيب';
+      }
+
+      renderDishes();
+      updateCartUI();
+    }
+
+    // -------------------------------------------------------------
+    // Toast Notification Helper
+    // -------------------------------------------------------------
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const text = document.getElementById('toast-message');
+      text.textContent = msg;
+
+      toast.classList.remove('opacity-0', 'translate-y-4');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-4');
+      }, 2500);
+    }
+
+    // -------------------------------------------------------------
+    // LocalStorage Helper
+    // -------------------------------------------------------------
+    function saveCartToStorage() {
+      try {
+        localStorage.setItem('tarteeb_cart', JSON.stringify(cart));
+      } catch (e) {}
+    }
+
+    function loadCartFromStorage() {
+      try {
+        const stored = localStorage.getItem('tarteeb_cart');
+        if (stored) {
+          cart = JSON.parse(stored);
+        }
+      } catch (e) {}
+    }
+  </script>
+</body>
+</html>
